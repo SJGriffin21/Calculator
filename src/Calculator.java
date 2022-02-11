@@ -6,14 +6,27 @@ public class Calculator {
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
-		System.out.println("Please enter two numbers on different lines to add them togethher");
+		System.out.println("Please enter two numbers on different lines");
 		
 		int one = input.nextInt();
 		int two = input.nextInt();
+		int answer = 0;
 		
-		int sum = one + two;
+		System.out.println("Do you want to add or subtract?");
+		String response = input.nextLine();
+		response = input.nextLine();
 		
-		System.out.print(sum);
+		if (response.equalsIgnoreCase("add")) {
+			answer = one + two;
+		}
+		
+		else if (response.equalsIgnoreCase("subtract")) {
+			answer = one - two;
+		}
+			
+		
+		
+		System.out.print(answer);
 		
 	}
 }
