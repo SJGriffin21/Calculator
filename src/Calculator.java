@@ -8,9 +8,9 @@ public class Calculator {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Please enter two numbers on different lines");
 		
-		int one = input.nextInt();
-		int two = input.nextInt();
-		int answer = 0;
+		double one = input.nextDouble();
+		double two = input.nextDouble();
+		double answer = 0;
 		
 		System.out.println("Do you want to add, subtract, multiply, or divide?");
 		String response = input.nextLine();
