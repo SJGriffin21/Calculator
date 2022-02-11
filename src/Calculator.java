@@ -12,7 +12,7 @@ public class Calculator {
 		int two = input.nextInt();
 		int answer = 0;
 		
-		System.out.println("Do you want to add or subtract?");
+		System.out.println("Do you want to add, subtract, multiply, or divide?");
 		String response = input.nextLine();
 		response = input.nextLine();
 		
@@ -22,6 +22,14 @@ public class Calculator {
 		
 		else if (response.equalsIgnoreCase("subtract")) {
 			answer = one - two;
+		}
+		
+		else if (response.equalsIgnoreCase("multiply")) {
+			answer = one * two;
+		}
+		
+		else if (response.equalsIgnoreCase("divide")) {
+			answer = one / two;
 		}
 			
 		
